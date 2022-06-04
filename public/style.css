@@ -58,13 +58,13 @@ span.fas{
     padding-left: 5px;
     align-items: center;
     display: flex;
+    border-radius: 4px;
 }
 input{
     height:56px;
     padding-bottom: 10px;
     outline:none;
     border: 0px solid #E9EEF2;
-    border-radius: 4px;
     width:272px;
     font-size: 24px;
     font-weight: 500;
@@ -126,7 +126,7 @@ div.statement{
     align-items: center;
     height: 80px;
     width: 490px;
-    border: 1px solid #F4F8FA;
+    border: 1px solid white;
     border-radius: 8px;
     text-align: center;
 }
