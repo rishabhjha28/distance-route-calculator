@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0TW4kTWtG7vu06Xr16S2JyEMupBfBhH8&libraries=places"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Distance Calculator</title>
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><img src="logo.png" alt="Logo" /></li>
+        <li>Graviti</li>
+      </ul>
+    </nav>
+    <p class="intro">
+      Let's calculate <strong>distance</strong> from google maps
+    </p>
+    <div class="main-container">
+      <div class="left-main">
+        <div class="left-up">
+          <div class="inpfield">
+            <div class="from">
+              <label for="origin">Origin</label>
+              <span class="fas fa-map-marker-alt">
+                <input type="search" name="origin" id="origin" placeholder=""
+              /></span>
+            </div>
+            <div class="to">
+              <label for="destination">Destination</label>
+              <span class="fas fa-map-marker-alt">
+                <input
+                  type="search"
+                  name="destination"
+                  id="destination"
+                  placeholder=""
+              /></span>
+            </div>
+          </div>
+          <div class="calc">
+            <button onclick="findRoute()">Calculate</button>
+          </div>
+        </div>
+        <div class="left-bottom">
+          <div class="result">
+            <Span>Distance</Span>
+            <p class="inline"></p>
+          </div>
+          <div class="statement"><p></p></div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="/frontend.js"></script>
+  </body>
+</html>
